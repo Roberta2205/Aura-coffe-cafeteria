@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epunda Slab", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(to right, #421b18, #D7CCC8);
+    color: white;
+    padding: 0 2rem;
+    height: 4.8rem;
+    display: grid;
+    align-items: center;
+}
+
+.container-header {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo {
+    display: flex;
+    margin: 0 10px;
+}
+
+.div-logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 05.rem;
+    padding: 0 20px 5px 0;
+    font-family: "Parisienne", cursive;
+}
+
+.div-logo-img {
+    width: 3rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.div-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px;
+}
+
+.button-list {
+    background-color: #906e56;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button-list:hover {
+    transform: scale(1.20);
+    background-color: #cbb38c;
+    transition: 0.5s;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgba(226, 225, 225, 0.505);
+    display: inline-block;
+
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.menu-link:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+main {
+    min-height: 600px;
+    padding: 0 50px;
+    background-color: #8D6E63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+ .container-home {
+    margin: 0;
+    padding: 3rem;
+ }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.div-text-home {
+    text-align: start;
+}
+
+.h1-text-home {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.span-h1-home {
+    font-family: "Parisienne", cursive;
+    color: #3E2723;
+}
+
+.img-home {
+    width: 550px;
+    transform: scale(1.25);
+    animation: balanco 7s linear infinite;
+ }
+
+ @keyframes balanco {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.section-services {
+    padding: 2.5rem 3rem;
+    margin: 0 auto;
+    min-height: 600px;
+    background-color: #FFF8F0;
+}
+
+.container-services {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 0 3rem;
+}
+
+.title-section-services {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Parisienne", cursive;
+    color:#5D4037;
+}
+
+.div-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    place-items: center;
+}
+
+.service-card {
+    border-radius: 25px;
+    background-color: #cbaea4;
+    box-shadow: 0 0.25rem 3rem #3E2723;
+    transition: all 0.5s ease;
+    max-width: 300px;
+    position: relative;
+}
+
+.service-card:hover {
+    background-color: #854d3d;
+    color: #3E2723;
+}sss
+
+.div-card-image {
+    height: 150px;
+}
+
+.image-card {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-3.5rem);
+    transition: transform 0.5s ease, scale 0.3s ease;
+}
+
+.service-card:hover .image-card {
+    transform: translateY(-4rem) scale(1.1) rotate(10deg);
+}
+
+.div-text-card-services {
+    padding: 1rem;text-align: center;
+}
+
+.h1-card-service {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.p-card-service {
+    color: #3E2723;
+    transition: all 0.7s ease;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin-bottom: 1 rem;
+}
+
+.service-card:hover .p-card-service {
+    color: white;
+}
+
+footer {
+    background-color: #8D6E63;
+    min-height: 150px;
+    padding: 1rem;
+}
+
+.div-logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Parisienne", cursive;
+}
+
+.p-footer {
+    color: white;
+    margin: 1rem;
+}
+
+.sobre-nos {
+    min-height: 600px;
+    padding: 50px 20px;
+    background-color: #f4e8d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.h1-sobre-nos {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3E2723;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-sobre-nos {
+    color: #3E2723;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+.imagens-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.imagem-wpp, .imagem-insta {
+    height: 60px; 
+}
+
+@media screen and (max-width: 845px) {
+    .div-logo a {
+        font-size: 1.5rem;
+    }
+    .menu-list {
+        display: none;
+    }
+    }
+
+@media screen and (max-width: 1037px) {
+    .h1-text-home {
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .h1-text-home {
+        font-size: 3.2rem;
+    }
+    .img-home {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 960px) {
+    main {
+        min-height: 550px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .div-text-home {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .h1-text-home {
+        font-size: 2.8rem;
+    }
+    .img-home {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-home {
+        padding: 50px 0;
+    }
+    .h1-text-home {
+        font-size: 3rem;
+    }
+    .img-home {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .div-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .div-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3.5rem;
+    }
+}
